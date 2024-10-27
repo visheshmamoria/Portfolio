@@ -33,12 +33,12 @@ const Navbar = () => {
           <li>Tech</li>
         </a>
 
-        <a
+        {/* <a
           href="#projects"
           className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100"
         >
           <li>Projects</li>
-        </a>
+        </a> */}
 
         <a
           href="#contact"
@@ -49,22 +49,31 @@ const Navbar = () => {
       </ul>
 
       <ul className="hidden md:flex gap-5">
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
-          <BsLinkedin />
-        </li>
+  <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
+    <a href="https://www.linkedin.com/in/vishesh-mamoria-63631b271/" target="_blank" rel="noopener noreferrer">
+      <BsLinkedin />
+    </a>
+  </li>
 
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
-          <BsGithub />
-        </li>
+  <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
+    <a href="https://github.com/visheshmamoria" target="_blank" rel="noopener noreferrer">
+      <BsGithub />
+    </a>
+  </li>
 
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-sky-500 hover:opacity-100">
-          <BsTwitter />
-        </li>
+  <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-sky-500 hover:opacity-100">
+    <a href="https://x.com/VisheshMamoria" target="_blank" rel="noopener noreferrer">
+      <BsTwitter />
+    </a>
+  </li>
 
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
-          <BsInstagram />
-        </li>
-      </ul>
+  <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
+    <a href="https://www.instagram.com/vishesh.mamoria/" target="_blank" rel="noopener noreferrer">
+      <BsInstagram />
+    </a>
+  </li>
+</ul>
+
 
       {isOpen ? (
         <BiX className="block md:hidden text-4xl" onClick={menuOpen} />
