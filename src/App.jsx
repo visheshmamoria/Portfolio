@@ -1,12 +1,12 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Projects from "./components/Projects";
+// import Projects from "./components/Projects";
 import Tech from "./components/Tech";
 import Contact from "./components/Contact";
 
 
 function App() {
-  
+   
 
   return (
     <>
@@ -15,7 +15,7 @@ function App() {
       <main className = "flex flex-col itmes-center px-4 md:px-8 lg:px-16">
         <Navbar/>
         <Hero/>
-        <Projects/>
+        {/* <Projects/> */}
         <Tech/>
         <Contact/>
       </main>
